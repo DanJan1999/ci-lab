@@ -1,10 +1,11 @@
-function getGreeting(name){
-    return "Hi " + name;
-};
+module.exports = {
 
-function displayWinner(name, name2){
-    return name+ " beat " +name2+ "!"
-};
+    getGreeting: (name) => {
+        return "Hi " + name;
+    },
 
-module.exports = getGreeting;
-module.exports = displayWinner;
+    displayWinner: (name, name2) => {
+        return name+ " beat " +name2+ "!"
+    },
+
+};
